@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +50,247 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+ *{
+    box-sizing:border-box;
 }
 
 html, body {
-    height: 100%;
+	height: auto;
+	width: 100%;
 }
 
+	@txtcolor: blue;
+	@bgcolor: skyblue;
+   
+	.button1{
+		margin: 0 5px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 20px;
+	color: blue;
+	text-decoration: none;
+	margin-bottom: 20px;
+	background-color:whitesmoke;
+	width:max-content;
+	}
+
+	.content-row(){
+		width: 100%;
+		height: 0 auto;
+		box-sizing: border-box;
+	}
+
+ *{
+	 background-color: @bgcolor;
+ }
+ 
+ .container{
+	width: 100%;
+	height: 400px;
+	background-image: url('https://www.pexels.com/photo/abstract-background-beach-color-355288/');
+	background-size: 100% 100%;
+	
+  }
+  
+  h1 {
+	font-family: 'Anton';
+	margin: 20px 0;
+	font-size: 60px;
+	text-align:center;
+	color:@txtcolor
+  }
+  
+  h2, h3, h4, h5, h6 {
+	font-family: 'Anton';
+	margin-bottom: 0;
+	padding: 0 10px;
+	font-size: 40px;
+	color: @txtcolor;
+  }
+  
+  
+  p{
+	font-size: 20px;
+  font-family: roboto;
+  padding: 20px;
+  line-height:1.5;
+  color: @txtcolor;
+  }
+  
+  
+   img{
+	border-radius: 10px;
+	
+  }
+  
+  img:hover {
+	transform: scaleX(-1);
+  }
+  
+  .content-row {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .content-row div {
+	margin: 20px;
+	padding: 20px;
+  }
+  
+  
+
+  .about p{
+	  border-bottom: 1px dashed black;
+	  width: 100%;
+	  height: auto;
+  }
+  
+  .container{
+	margin: 0 auto;
+	width:900px;
+ 
+	@media screen and (max-width: 500px) {
+		.container {
+		  width: 100%;
+		  padding: 20px;
+		}
+		.container header nav {
+		  display: flex;
+		  flex-direction: column;
+		  width: 100%;
+		}
+	  
+		body img{
+		  
+			width:100%;
+			height: auto;
+		  
+		}
+		
+		
+	  
+		.container p {
+		  padding: 5px;
+		  color: blue;
+		  max-width: max-content;
+		}
+	  
+		
+	  
+		.content-row {
+		  display: block;
+			  
+		img{
+			visibility: hidden;
+		}
+	}
+		 .content-row p{
+		   font-size: 15px;
+		   padding-bottom: 20px;
+		 } 
+	  
+		 .footer-content nav {
+		  display:inline-flex;
+		  width:100%;
+		  height: auto;
+		  align-items: center;
+		  justify-content: flex-start;
+		  margin-left: 100px;
+		}
+	  
+		 
+		}
+
+	header{
+       width:100%;
+			}
+    nav  {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	a{
+	.button1();
+  }
+
+  .container header nav a:hover {
+  	background-color:white;
+	color:red;
+  }
+
+  .actions stacked{
+	  .button1();
+  }
+ 
+  h2{
+	margin-top:20px;
+  }
+  
+  .contact-section() {
+	border-top: 1px dashed black;
+	padding: 20px 0;
+	width:max-content;
+  }
+  
+  .contact-section h2 {
+	padding: 0;
+	margin: 0 0 10px 0;
+  }
+  
+ 
+  .contact-section{
+	line-height:2;
+	color: @txtcolor;
+	font-size: 18px;
+  }
+  
+  
+  footer {
+	background: @bgcolor;
+	border-top: 1px dashed black;
+	width: max-content;
+  }
+  
+  footer .footer-content { 
+	margin: 0 auto; 
+	width:880px;
+  }
+  
+  footer .footer-content h3 {
+	padding: 0;
+	margin: 20px 0;
+  }
+  
+  footer nav {
+	display: flex;
+	background:@bgcolor;
+	justify-content: space-around;
+  }
+  
+ 
+  footer a{
+	margin: 10px;
+	color:@txtcolor;
+	text-decoration: underline;
+	font-size: 20px;
+	
+  }
+  
+  footer nav a:first-child {
+	margin-left: 0;
+  }
+  
+  
+  footer nav a:hover{
+	color:red;
+  }
+  
+  footer .footer-content  {
+	padding: 20px 0;
+	text-align:center;
+	
+  }
+
+  
+}
