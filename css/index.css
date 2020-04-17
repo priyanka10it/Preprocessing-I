@@ -1,1 +1,346 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: auto;
+  width: 100%;
+}
+.button {
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  padding: 10px 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: blue;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+}
+* {
+  background-color: skyblue;
+}
+h1 {
+  font-family: 'Anton';
+  margin: 20px 0;
+  font-size: 60px;
+  text-align: center;
+  color: blue;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anton';
+  margin-bottom: 0;
+  padding: 0 10px;
+  font-size: 40px;
+  color: blue;
+}
+p {
+  font-size: 20px;
+  font-family: roboto;
+  padding: 20px;
+  line-height: 1.4;
+  color: blue;
+}
+img {
+  border-radius: 10px;
+}
+img:hover {
+  transform: scaleX(-1);
+}
+.content-row {
+  display: flex;
+}
+.content-row div {
+  margin: 20px;
+}
+/*.container {
+	
+  }*/
+#about {
+  border-bottom: 1px dashed black;
+  width: max-content;
+}
+.container {
+  margin: 0 auto;
+  width: 900px;
+}
+.container header {
+  width: 100%;
+}
+.container nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  body img{
+    
+      width:100%;
+      height: auto;
+    
+  }
+  
+  body p{
+    
+    width:100%;
+    height: auto;
+    color: brown'
+}
+
+  .container p {
+    padding: 5px;
+    color: blue;
+    max-width: max-content;
+  }
+
+  .container #about p{
+    width: 60%;
+    
+  }
+  .content-row {
+    display: flex;
+  }   
+  .content-row img {
+    width:100%;
+    height: auto;
+    position: relative;
+    margin-top: 50px;
+  }
+
+   .content-row p{
+     font-size: 15px;
+     padding-bottom: 20px;
+   } 
+
+   .footer-content nav {
+    display:inline-flex;
+    width:100%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 100px;
+  }
+
+   
+  }
+
+
+
+.container a {
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  padding: 10px 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: blue;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+}
+.container header nav a:hover {
+  background-color: white;
+  color: red;
+}
+.actions stacked {
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  padding: 10px 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: blue;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+}
+h2 {
+  margin-top: 20px;
+}
+.contact-section {
+  border-top: 1px dashed black;
+  padding: 20px 0;
+}
+.contact-section h2 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+.contact-section {
+  line-height: 2;
+  color: blue;
+  font-size: 18px;
+}
+footer {
+  background: skyblue;
+  border-top: 1px dashed black;
+}
+footer .footer-content {
+  margin: 0 auto;
+  width: 880px;
+}
+footer .footer-content h3 {
+  padding: 0;
+  margin: 20px 0;
+}
+footer nav {
+  display: flex;
+  background: skyblue;
+  justify-content: space-around;
+}
+footer a {
+  margin: 10px;
+  color: blue;
+  text-decoration: underline;
+  font-size: 20px;
+}
+footer nav a:first-child {
+  margin-left: 0;
+}
+footer nav a:hover {
+  color: red;
+}
+footer .footer-content {
+  padding: 20px 0;
+  text-align: center;
+}
+}
